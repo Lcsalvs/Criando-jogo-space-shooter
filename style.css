@@ -10,11 +10,26 @@ body{
     font-family: sans-serif;
 }
 
-.main-game{
+#main-game{
     background: #111;
     background-image: url(/pexels-pixabay-41951.jpg);
-    width: 900px;
+    width: 700px;
     height: 600px;
+}
+
+.game-instructions{
+    position: relative;
+    color: #fff;
+    left: 10rem;
+    top: -60px;
+}
+
+.start-button{
+    position: relative;
+    color: #fff;
+    top: 9rem;
+    left: 20rem;
+    cursor: pointer;
 }
 
 .hero{
@@ -23,4 +38,28 @@ body{
     height: 100px;
     left: 20px;
     top: 250px;
+}
+
+.laser{
+    position: relative;
+    width: 50px;
+    height: 40px;
+}
+
+.monster{
+    height: 80px;
+    width: 100px;
+    position: relative;
+}
+
+.monster-transition{
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.dead-monster{
+    height: 60px;
+    width: 70px;
+    position: relative;
+    opacity: 0;
 }
